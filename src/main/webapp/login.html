@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>公寓管理系统 - 登录页面</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/md5.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/login.js"></script>
+</head>
+<body>
+<div class="login">
+	<img src="image/logo.png" alt="智游">
+	<p>XX系统</p>
+
+	<div>
+		<input type="text" id="username" name="username" value="" placeholder="请输入用户名">
+	</div>
+	<div>
+		<input type="password" id="password" name="password" value="" placeholder="请输入密码">
+	</div>
+	<div>
+		<p id="tip" class="error-message"></p>
+        <!--"-->
+		<input type="submit" value="登录" onclick="login()">
+	</div>
+
+</div>
+<!--<script>
+	if (window.top !== window) {
+		window.top.location.reload();
+	}
+</script>-->
+</body>

@@ -1,0 +1,16 @@
+<c3p0-config>
+      <!-- c3p0默认配置，下面还可以配置多个数据库 -->
+     <default-config>
+          <property name="jdbcUrl">jdbc:mysql://localhost:3306/coredb
+          </property>
+          <property name="driverClass">com.mysql.jdbc.Driver</property>
+         <property name="user">root</property>
+          <property name="password">123456</property>
+          <!-- 初始化时获取连接数 -->
+         <property name="initialPoolSize">2</property>
+         <!-- 连接池中保留的最大连接数 -->
+         <property name="maxPoolSize">2</property>
+         <!-- 最大空闲时间，多少秒内未使用则连接被丢弃。若为0则永不丢弃。默认值: 0 -->
+         <property name="maxIdleTime">1000</property>
+     </default-config>
+ </c3p0-config>

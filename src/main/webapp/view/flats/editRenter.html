@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XX系统 - 租户信息更新</title>
+	<link rel="stylesheet" href="../../../css/main.css">
+	<link rel="stylesheet" href="../../../lib/font-awesome/css/font-awesome.css">
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	<script src="/js/editRenter.js"></script>
+</head>
+<body>
+<div class="box">
+	<h3>修改租户信息</h3>
+	<form action="" method="post">
+		<table class="form-table">
+			<!--隐藏域 后台能看到 前台看不到-->
+			<input type="hidden" id="id" value="">
+			<tr>
+				<td>租户姓名</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="姓名" id="name">
+				</td>
+			</tr>
+			<tr>
+				<td>租户号码</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="租户号码" id="phone">
+				</td>
+			</tr>
+			<tr>
+				<td>性别</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="性别" id="sex">
+				</td>
+			</tr>
+			<tr>
+				<td>身份证号</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="身份证号" id="idNum">
+				</td>
+			</tr>
+			<tr>
+				<td>籍贯</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="籍贯" id="nativePlace">
+				</td>
+			</tr>
+		</table>
+		<div class="buttons">
+			<input class="btn btn-primary va-bottom" type="submit" value="保存" onclick="save()">&nbsp;&nbsp;
+			<a class="btn btn-default" href="javascript:history.go(-1)">返回</a>
+		</div>
+	</form>
+</div>
+</body>
+</html>

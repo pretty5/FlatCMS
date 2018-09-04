@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XX系统 - 合同信息更新</title>
+	<link rel="stylesheet" href="../../../css/main.css">
+	<link rel="stylesheet" href="../../../lib/font-awesome/css/font-awesome.css">
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	<script src="/js/editLease.js"></script>
+</head>
+<body>
+<div class="box">
+	<h3>添加合同信息</h3>
+	<form action="" method="post">
+		<table class="form-table">
+			<!--隐藏域 后台能看到 前台看不到-->
+			<input type="hidden" id="id" value="">
+
+			<tr>
+				<td>租户信息</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="租户信息" value="经开区" id="renterId">
+				</td>
+			</tr>
+			<tr>
+				<td>房子信息</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="房子信息" value="美景鸿城" id="houseId">
+				</td>
+			</tr>
+			<tr>
+				<td>房租</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="房租" value="二单元" id="rental">
+				</td>
+			</tr>
+			<tr>
+				<td>租房时长</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="租房时长" value="10" id="leaseTerm">
+				</td>
+			</tr>
+			<tr>
+				<td>合同时长</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="合同时长" value="1002" id="contractTerm">
+				</td>
+			</tr>
+			<tr>
+				<td>添加时间</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="添加时间" value="1002" id="createTime">
+				</td>
+			</tr>
+			<tr>
+				<td>修改时间</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" placeholder="修改时间" value="1002" id="lastModifiedTime">
+				</td>
+			</tr>
+
+		</table>
+		<div class="buttons">
+			<input class="btn btn-primary va-bottom" type="submit" value="保存" onclick="save()">&nbsp;&nbsp;
+			<a class="btn btn-default" href="javascript:history.go(-1)">返回</a>
+		</div>
+	</form>
+</div>
+</body>
+</html>

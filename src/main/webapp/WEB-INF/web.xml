@@ -1,0 +1,51 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <!--设置字符集编码-->
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>com.zhiyou100.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter>
+    <filter-name>loginFilter</filter-name>
+    <filter-class>com.zhiyou100.filter.LoginFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>loginFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+ <filter-mapping>
+    <filter-name>loginFilter</filter-name>
+    <url-pattern>/admin.html</url-pattern>
+  </filter-mapping>
+
+  <!--监听器，用于加载工厂-->
+  <listener>
+    <listener-class>com.zhiyou100.listener.ContextLoadListener</listener-class>
+  </listener>
+
+  <servlet>
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class>com.zhiyou100.servlet.DispatcherServlet</servlet-class>
+  </servlet>
+
+
+  <!--*.do 的目的是避免拦截静态资源（js,img,css,html）以及其他的servlet请求）-->
+  <servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <!--配置首页-->
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+</web-app>

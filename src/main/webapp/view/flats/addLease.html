@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XX系统 - 房屋信息添加</title>
+	<link rel="stylesheet" href="../../../css/main.css">
+	<link rel="stylesheet" href="../../../lib/font-awesome/css/font-awesome.css">
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	<script src="/js/addLease.js"></script>
+</head>
+<body>
+<div class="box">
+	<h3>添加合同信息</h3>
+	<form action="" method="post">
+	<table class="form-table">
+		<tr>
+			<td>租户信息</td>
+			<td colspan="3" class="control">
+				<input type="text" name="" placeholder="租户信息" id="renterId">
+			</td>
+		</tr>
+		<tr>
+			<td>房子信息</td>
+			<td colspan="3" class="control">
+				<input type="text" name="" placeholder="房子信息" id="houseId">
+			</td>
+		</tr>
+		<tr>
+			<td>房租</td>
+			<td colspan="3" class="control">
+				<input type="text" name="" placeholder="房租" id="rental">
+			</td>
+		</tr>
+		<tr>
+			<td>租房时长</td>
+			<td colspan="3" class="control">
+				<input type="text" name="" placeholder="租房时长" id="leaseTerm">
+			</td>
+		</tr>
+		<tr>
+			<td>合同时长</td>
+			<td colspan="3" class="control">
+				<input type="text" name="" placeholder="合同时长" id="contractTerm">
+			</td>
+		</tr>
+	</table>
+	<div class="buttons">
+		<input class="btn btn-primary va-bottom" type="submit" value="保存" onclick="addLease()">&nbsp;&nbsp;
+		<a class="btn btn-default" href="javascript:history.go(-1)">返回</a>
+	</div>
+	</form>
+</div>
+</body>
+</html>
